@@ -13,12 +13,15 @@ public class GenericObject {
     @Setter
     @Getter
     public ObjectId _Id;
+    @ApiModelProperty(required = true, notes = "This can be any name")
     @Setter
     @Getter
     private String name;
+    @ApiModelProperty(required = true, notes = "This can be any role")
     @Setter
     @Getter
     private String role;
+    @ApiModelProperty(required = true, notes = "This can be any rank")
     @Setter
     @Getter
     private String rank;

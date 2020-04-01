@@ -3,6 +3,8 @@ package com.bandp.mocks.controllers;
 import com.bandp.mocks.exceptions.GenericObjectNotFoundException;
 import com.bandp.mocks.models.GenericObject;
 import com.bandp.mocks.repositories.GenericRepository;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,12 +18,15 @@ import java.util.Optional;
 @RequestMapping("api/v1/genericToMongo")
 public class GenericControllerToMongo {
 
+    private Log log = LogFactory.getLog(GenericControllerToMongo.class);
+
     @Autowired
     private GenericRepository repository;
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<GenericObject> getGenericObject() {
+        log.info("getting all that smoke");
         return repository.findAll();
     }
 

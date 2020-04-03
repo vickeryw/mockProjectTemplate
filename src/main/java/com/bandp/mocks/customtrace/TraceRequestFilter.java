@@ -1,4 +1,4 @@
-package com.bandp.mocks;
+package com.bandp.mocks.customtrace;
 
 import org.springframework.boot.actuate.trace.http.HttpExchangeTracer;
 import org.springframework.boot.actuate.trace.http.HttpTraceRepository;
@@ -22,6 +22,6 @@ public class TraceRequestFilter extends HttpTraceFilter {
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
-        return request.getServletPath().contains("actuator");
+        return request.getServletPath().contains("actuator") || request.getServletPath().contains("swagger");
     }
 }

@@ -1,4 +1,4 @@
-package com.bandp.mocks.repositories;
+package com.bandp.mocks.customtrace;
 
 import org.springframework.boot.actuate.trace.http.HttpTrace;
 import org.springframework.boot.actuate.trace.http.HttpTraceRepository;
@@ -18,8 +18,7 @@ public class CustomTraceRepository implements HttpTraceRepository {
 
     @Override
     public void add(HttpTrace trace) {
-        if ("GET".equals(trace.getRequest()
-                .getMethod())) {
+        if ("GET".equals(trace.getRequest().getMethod())) {
             lastTrace.set(trace);
         }
     }

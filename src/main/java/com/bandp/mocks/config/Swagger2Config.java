@@ -15,24 +15,24 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class Swagger2Config {
 
-    @Bean
-    public Docket api() {
-        return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.any())
-                .build()
-                .apiInfo(apiInfo());
-    }
+  @Bean
+  public Docket api() {
+    return new Docket(DocumentationType.SWAGGER_2)
+        .select()
+        .apis(RequestHandlerSelectors.any())
+        .paths(PathSelectors.any())
+        .build()
+        .apiInfo(apiInfo());
+  }
 
-    private ApiInfo apiInfo() {
+  private ApiInfo apiInfo() {
 
-        return new ApiInfoBuilder()
-                .title("mocking template Swagger Page")
-                .description("REST api testing point for all controllers")
-                .contact(new Contact("bandp", "", "bandp@email.com"))
-                .version("1.0.0")
-                .build();
-    }
+    return new ApiInfoBuilder()
+        .title("mocking template Swagger Page")
+        .description("REST api testing point for all controllers")
+        .contact(new Contact("bandp", "", "bandp@email.com"))
+        .version("1.0.0")
+        .build();
+  }
 
 }

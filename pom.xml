@@ -78,6 +78,7 @@
   </dependencies>
 
   <build>
+    <finalName>mockymocks</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
@@ -114,17 +115,21 @@
                 <image>
                   <name>${project.artifactId}</name>
                   <build>
-                    <from>java:8-jdk-alpine</from>
-                    <entryPoint>
-                      <exec>
-                        <args>java</args>
-                        <args>-jar</args>
-                        <args>/maven/${project.artifactId}-${project.version}.jar</args>
-                      </exec>
-                    </entryPoint>
+                    <dockerFile>${project.basedir}/Dockerfile</dockerFile>
+<!--                    <from>java:8-jdk-alpine</from>-->
+<!--                    <entryPoint>-->
+<!--                      <exec>-->
+<!--                        <args>java</args>-->
+<!--                        <args>-jar</args>-->
+<!--                        <args>/maven/${project.artifactId}-${project.version}.jar</args>-->
+<!--                      </exec>-->
+<!--                    </entryPoint>-->
                     <assembly>
                       <descriptorRef>artifact</descriptorRef>
                     </assembly>
+                    <tags>
+                      <tag>${project.version}</tag>
+                    </tags>
                   </build>
                 </image>
               </images>

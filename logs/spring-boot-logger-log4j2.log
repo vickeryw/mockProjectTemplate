@@ -1,0 +1,111 @@
+2020-04-06 16:48:25.417  INFO 9117 --- [  restartedMain] com.bandp.mocks.MocksApplication         : Starting MocksApplication on bill-VirtualBox with PID 9117 (/home/bill/git/mocks/target/classes started by bill in /home/bill/git/mocks)
+2020-04-06 16:48:25.420  INFO 9117 --- [  restartedMain] com.bandp.mocks.MocksApplication         : No active profile set, falling back to default profiles: default
+2020-04-06 16:48:25.498  INFO 9117 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-06 16:48:25.498  INFO 9117 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-06 16:48:27.287  INFO 9117 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-06 16:48:27.366  INFO 9117 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 1 MongoDB repository interfaces.
+2020-04-06 16:48:28.340  INFO 9117 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-04-06 16:48:28.354  INFO 9117 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-06 16:48:28.355  INFO 9117 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-06 16:48:28.536  INFO 9117 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-06 16:48:28.537  INFO 9117 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3039 ms
+2020-04-06 16:48:28.943  INFO 9117 --- [  restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-06 16:48:28.943  INFO 9117 --- [  restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-04-06 16:48:29.061  INFO 9117 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+2020-04-06 16:48:29.101  INFO 9117 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=37155672}
+2020-04-06 16:48:29.104  INFO 9117 --- [localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-04-06 16:48:29.623  INFO 9117 --- [  restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-04-06 16:48:29.692  INFO 9117 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-06 16:48:30.125  INFO 9117 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2020-04-06 16:48:30.228  INFO 9117 --- [  restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-06 16:48:30.384  INFO 9117 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-06 16:48:30.783  INFO 9117 --- [  restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-04-06 16:48:30.849  INFO 9117 --- [  restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-06 16:48:30.895  INFO 9117 --- [  restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-06 16:48:30.961  INFO 9117 --- [  restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-06 16:48:31.187  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getGenericObjectUsingGET_1
+2020-04-06 16:48:31.201  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-04-06 16:48:31.204  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-04-06 16:48:31.206  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2020-04-06 16:48:31.209  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2020-04-06 16:48:31.211  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2020-04-06 16:48:31.213  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2020-04-06 16:48:31.215  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2020-04-06 16:48:31.218  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2020-04-06 16:48:31.220  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2020-04-06 16:48:31.223  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2020-04-06 16:48:31.225  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2020-04-06 16:48:31.228  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2020-04-06 16:48:31.230  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2020-04-06 16:48:31.232  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2020-04-06 16:48:31.236  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2020-04-06 16:48:31.238  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2020-04-06 16:48:31.240  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2020-04-06 16:48:31.242  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2020-04-06 16:48:31.244  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2020-04-06 16:48:31.246  INFO 9117 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2020-04-06 16:48:31.309  INFO 9117 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-06 16:48:31.312  INFO 9117 --- [  restartedMain] com.bandp.mocks.MocksApplication         : Started MocksApplication in 6.571 seconds (JVM running for 7.491)
+2020-04-06 16:48:31.616  INFO 9117 --- [gistrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 7dc61205623c
+2020-04-06 16:48:31.650  INFO 9117 --- [nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-06 16:48:31.650  INFO 9117 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-06 16:48:31.658  INFO 9117 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-04-06 16:48:31.760  INFO 9117 --- [nio-8081-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:15}] to localhost:27017
+2020-04-06 16:51:45.918  INFO 9117 --- [nio-8081-exec-3] c.b.m.c.GenericControllerToMongo         : Getting all
+2020-04-06 16:57:39.157  INFO 9117 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-04-06 16:57:39.166  INFO 9117 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-06 16:57:39.234  INFO 9117 --- [extShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:15}] to localhost:27017 because the pool has been closed.
+2020-04-06 16:57:50.977  INFO 9580 --- [  restartedMain] com.bandp.mocks.MocksApplication         : Starting MocksApplication on bill-VirtualBox with PID 9580 (/home/bill/git/mocks/target/classes started by bill in /home/bill/git/mocks)
+2020-04-06 16:57:50.984  INFO 9580 --- [  restartedMain] com.bandp.mocks.MocksApplication         : No active profile set, falling back to default profiles: default
+2020-04-06 16:57:51.207  INFO 9580 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-06 16:57:51.208  INFO 9580 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-06 16:57:53.175  INFO 9580 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-06 16:57:53.256  INFO 9580 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72ms. Found 1 MongoDB repository interfaces.
+2020-04-06 16:57:54.529  INFO 9580 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-04-06 16:57:54.543  INFO 9580 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-06 16:57:54.544  INFO 9580 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-06 16:57:54.771  INFO 9580 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-06 16:57:54.772  INFO 9580 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3564 ms
+2020-04-06 16:57:55.410  INFO 9580 --- [  restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-06 16:57:55.411  INFO 9580 --- [  restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-04-06 16:57:55.592  INFO 9580 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:16}] to localhost:27017
+2020-04-06 16:57:55.640  INFO 9580 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4200260}
+2020-04-06 16:57:55.642  INFO 9580 --- [localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-04-06 16:57:56.359  INFO 9580 --- [  restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-04-06 16:57:56.449  INFO 9580 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-06 16:57:57.001  INFO 9580 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2020-04-06 16:57:57.105  INFO 9580 --- [  restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-06 16:57:57.254  INFO 9580 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-06 16:57:57.814  INFO 9580 --- [  restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-04-06 16:57:57.892  INFO 9580 --- [  restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-06 16:57:57.929  INFO 9580 --- [  restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-06 16:57:58.011  INFO 9580 --- [  restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-06 16:57:58.263  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getGenericObjectUsingGET_1
+2020-04-06 16:57:58.276  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-04-06 16:57:58.278  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-04-06 16:57:58.280  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2020-04-06 16:57:58.283  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2020-04-06 16:57:58.285  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2020-04-06 16:57:58.287  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2020-04-06 16:57:58.289  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2020-04-06 16:57:58.295  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2020-04-06 16:57:58.300  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2020-04-06 16:57:58.303  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2020-04-06 16:57:58.306  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2020-04-06 16:57:58.310  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2020-04-06 16:57:58.319  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2020-04-06 16:57:58.321  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2020-04-06 16:57:58.331  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2020-04-06 16:57:58.336  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2020-04-06 16:57:58.341  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2020-04-06 16:57:58.349  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2020-04-06 16:57:58.355  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2020-04-06 16:57:58.358  INFO 9580 --- [  restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2020-04-06 16:57:58.450  INFO 9580 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-06 16:57:58.453  INFO 9580 --- [  restartedMain] com.bandp.mocks.MocksApplication         : Started MocksApplication in 8.359 seconds (JVM running for 9.724)
+2020-04-06 16:57:58.852  INFO 9580 --- [gistrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 7dc61205623c
+2020-04-06 16:57:58.929  INFO 9580 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-06 16:57:58.929  INFO 9580 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-06 16:57:58.939  INFO 9580 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-04-06 16:57:59.027  INFO 9580 --- [nio-8081-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:17}] to localhost:27017
+2020-04-06 16:58:25.838  INFO 9580 --- [nio-8081-exec-5] c.b.m.c.GenericControllerToMongo         : Getting all

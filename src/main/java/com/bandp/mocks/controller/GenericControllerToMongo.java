@@ -1,10 +1,8 @@
-package com.bandp.mocks.controllers;
+package com.bandp.mocks.controller;
 
-import com.bandp.mocks.exceptions.GenericObjectNotFoundException;
-import com.bandp.mocks.models.GenericObject;
-import com.bandp.mocks.repositories.GenericRepository;
+import com.bandp.mocks.model.GenericObject;
+import com.bandp.mocks.service.GenericObjectService;
 import java.util.List;
-import java.util.Optional;
 import javax.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.bson.types.ObjectId;
@@ -26,47 +24,34 @@ import org.springframework.web.bind.annotation.RestController;
 public class GenericControllerToMongo {
 
   @Autowired
-  private GenericRepository repository;
+  GenericObjectService genericObjectService;
 
   @GetMapping
   @ResponseStatus(HttpStatus.OK)
   public List<GenericObject> getGenericObject() {
     log.info("Getting all");
-    return repository.findAll();
+    return genericObjectService.getAllGenericObjects();
   }
 
   @GetMapping("/{id}")
   @ResponseStatus(HttpStatus.OK)
   public GenericObject getGenericObject(@PathVariable("id") ObjectId id) {
     log.info("Getting one: ", id);
-    Optional<GenericObject> genericObjectOptional = repository.findBy_Id(id);
-
-    if (!genericObjectOptional.isPresent()) {
-      throw new GenericObjectNotFoundException("id-" + id);
-    }
-    return genericObjectOptional.get();
+    return genericObjectService.getGenericObject(id);
   }
 
   @PostMapping
   @ResponseStatus(HttpStatus.CREATED)
   public GenericObject createGenericObject(@Valid @RequestBody GenericObject genericObject) {
     log.info("creating one...");
-    genericObject.set_Id(ObjectId.get());
-    repository.save(genericObject);
-    return genericObject;
+    return genericObjectService.createGenericObject(genericObject);
   }
 
   @DeleteMapping("/{id}")
   @ResponseStatus(HttpStatus.NO_CONTENT)
   public void deleteGenericObject(@PathVariable("id") ObjectId id) {
     log.info("Deleting one: ", id);
-    Optional<GenericObject> genericObjectOptional = repository.findBy_Id(id);
-
-    if (!genericObjectOptional.isPresent()) {
-      throw new GenericObjectNotFoundException("id-" + id);
-    }
-
-    repository.delete(genericObjectOptional.get());
+    genericObjectService.deleteGenericObject(id);
   }
 
   @PutMapping("/{id}")
@@ -74,15 +59,7 @@ public class GenericControllerToMongo {
   public GenericObject updateUser(@RequestBody GenericObject genericObject,
       @PathVariable ObjectId id) {
     log.info("Updating one: ", id);
-    Optional<GenericObject> genericObjectOptional = repository.findBy_Id(id);
-
-    if (!genericObjectOptional.isPresent()) {
-      throw new GenericObjectNotFoundException("id-" + id);
-    }
-
-    genericObject.set_Id(id);
-    repository.save(genericObject);
-    return genericObject;
+    return genericObjectService.updateGenericObject(genericObject, id);
   }
 
 }

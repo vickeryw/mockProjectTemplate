@@ -1,11 +1,15 @@
-package com.bandp.mocks.models;
+package com.bandp.mocks.model;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 
+@NoArgsConstructor
+@AllArgsConstructor
 public class GenericObject {
 
   @Id
@@ -26,10 +30,7 @@ public class GenericObject {
   @Getter
   private String rank;
 
-  public GenericObject(ObjectId _Id, String name, String role, String rank) {
-    this._Id = _Id;
-    this.name = name;
-    this.role = role;
-    this.rank = rank;
+  protected String getInfo() {
+    return String.format("Name is %s role is %s", name, role);
   }
 }

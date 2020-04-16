@@ -1,6 +1,6 @@
 package com.bandp.mocks;
 
-import com.bandp.mocks.repositories.GenericRepository;
+import com.bandp.mocks.repository.GenericRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

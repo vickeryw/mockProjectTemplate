@@ -1,6 +1,6 @@
-package com.bandp.mocks.repositories;
+package com.bandp.mocks.repository;
 
-import com.bandp.mocks.models.GenericObject;
+import com.bandp.mocks.model.GenericObject;
 import java.util.Optional;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;

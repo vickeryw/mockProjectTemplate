@@ -1,4 +1,4 @@
-package com.bandp.mocks.exceptions;
+package com.bandp.mocks.exception;
 
 public class GenericObjectNotFoundException extends RuntimeException {
 

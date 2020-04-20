@@ -29,28 +29,28 @@ public class GenericControllerToMongo {
   @GetMapping
   @ResponseStatus(HttpStatus.OK)
   public List<GenericObject> getGenericObject() {
-    log.info("Getting all");
+    log.info("Getting all GenericObjects (controller)");
     return genericObjectService.getAllGenericObjects();
   }
 
   @GetMapping("/{id}")
   @ResponseStatus(HttpStatus.OK)
   public GenericObject getGenericObject(@PathVariable("id") ObjectId id) {
-    log.info("Getting one: ", id);
+    log.info("Getting a GenericObject(controller): %s", id);
     return genericObjectService.getGenericObject(id);
   }
 
   @PostMapping
   @ResponseStatus(HttpStatus.CREATED)
   public GenericObject createGenericObject(@Valid @RequestBody GenericObject genericObject) {
-    log.info("creating one...");
+    log.info("creating a GenericObject (controller)");
     return genericObjectService.createGenericObject(genericObject);
   }
 
   @DeleteMapping("/{id}")
   @ResponseStatus(HttpStatus.NO_CONTENT)
   public void deleteGenericObject(@PathVariable("id") ObjectId id) {
-    log.info("Deleting one: ", id);
+    log.info("Deleting a GenericObject (controller): %s", id);
     genericObjectService.deleteGenericObject(id);
   }
 
@@ -58,7 +58,7 @@ public class GenericControllerToMongo {
   @ResponseStatus(HttpStatus.ACCEPTED)
   public GenericObject updateUser(@RequestBody GenericObject genericObject,
       @PathVariable ObjectId id) {
-    log.info("Updating one: ", id);
+    log.info("Updating a GenericObject (controller): %s", id);
     return genericObjectService.updateGenericObject(genericObject, id);
   }
 

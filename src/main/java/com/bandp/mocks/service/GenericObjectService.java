@@ -23,7 +23,7 @@ public class GenericObjectService {
   }
 
   public GenericObject getGenericObject(ObjectId id) {
-    log.info("Getting a GenericObject(service layer): %s", id);
+    log.info("Getting a GenericObject(service layer): {}", id);
     Optional<GenericObject> genericObjectOptional = repository.findBy_Id(id);
 
     if (!genericObjectOptional.isPresent()) {
@@ -40,7 +40,7 @@ public class GenericObjectService {
   }
 
   public void deleteGenericObject(ObjectId id) {
-    log.info("Deleting a GenericObject (service layer): %s", id);
+    log.info("Deleting a GenericObject (service layer): {}", id);
     Optional<GenericObject> genericObjectOptional = repository.findBy_Id(id);
 
     if (!genericObjectOptional.isPresent()) {
@@ -51,7 +51,7 @@ public class GenericObjectService {
   }
 
   public GenericObject updateGenericObject(GenericObject genericObject, ObjectId id) {
-    log.info("Updating a GenericObject (service layer): %s", id);
+    log.info("Updating a GenericObject (service layer): {}", id);
     Optional<GenericObject> genericObjectOptional = repository.findBy_Id(id);
 
     if (!genericObjectOptional.isPresent()) {
